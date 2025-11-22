@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Primary Meta Tags -->
+        <title>Shantry CDN</title>
+        <meta name="title" content="Shantry CDN">
+        
+        
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://shantry.com/assets/css/patricks.css">
+        <link rel="stylesheet" href="https://shantry.com/assets/css/mightDoSomethin.css">
+        <link rel="stylesheet" href="https://unpkg.com/movement.css/movement.css">
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+        <script src="https://shantry.com/assets/scripts/lapDance.js" defer></script>
+        <script src="https://shantry.com/assets/scripts/script.js" defer></script>
+        <script src="https://shantry.com/assets/scripts/mediaPlay.js" defer></script>
+    </head>
+
+    <body>
+        <div id="fade-in-content">
+            <div class="leaves"></div>
+
+            <main>
+                
+
+                <!-- Media Elements -->
+                <div id="audioVideo"><script src="https://shantry.com/assets/scripts/codeFrag.js"></script><script>loadAudioVideo();</script></div>
+
+                <!-- Main Content -->
+                <section class="fullscreen text-content">
+                    <div id="center">
+                        <h1 style="font-family: derk; font-size: 2.5em; text-align: center; text-shadow: 0 0 0.40em #000;">
+                            <strong style="color: #ffff;">SHANTRY</strong> 
+                            <strong style="color: #ffff;">CDN (content delivery network)</strong>
+                        </h1>
+
+                        <h3 style="font-family: 'Satisfy', cursive; font-size: 2em; text-align: center; text-shadow: 0 0 0.40em #000;">
+                            <strong></strong>
+                        </h3>
+
+                        <!-- Navigation Links -->
+                        <nav class="socials">
+                            
+
+                            <span style="font-size: 0.9em;">the shantry cdn is for creating links related to shantry company that are easily reachable. chances are, you dont need to be on this page to do anything.</span>
+                            <br><br><br>
+                            <span style="font-size: 0.9em;">join us on <a href="https://shantry.com/discord/"  class="nav-link">Discord</a></span>
+                            <br><br><br>
+                            <span style="font-size: 0.9em;">visit the <a href="https://shantry.com/"  class="nav-link">Shantry Company Website</a></span>
+                            <br><br><br>
+                            <span>> Press "a" for dance party</span>
+                            <br><br><br>
+                        </nav>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+
+        <style>
+            .nav-link {
+                text-shadow: 0 0 0.40em #000;
+                text-decoration: none;
+                font-family: 'Satisfy', cursive;
+                font-size: 1.6em;
+                color: #cd32be;
+            }
+
+            .leaves {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                background: url('https://shantry.com/assets/images/st-patricks-leaf.png');
+            }
+        </style>
+
+        <script>
+            function handleLinkClick(event, url) {
+                event.preventDefault();
+                launchConfetti();
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 2000);
+            }
+
+            function launchConfetti() {
+                confetti({
+                    particleCount: 10000,
+                    spread: 1000,
+                    origin: { y: -0.4 }
+                });
+            }
+        </script>
+    </body>
+</html>
